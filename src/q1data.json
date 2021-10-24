@@ -1,0 +1,159 @@
+{
+    "carNamesAndPrice":{
+        "data":[
+            { 
+                "Name" : "Pride",
+                "price" :155000000
+            },
+            { 
+                "Name" : "Peugeot Pars",
+                "price" :275000000
+            },
+            { 
+                "Name" : "Peugeot 405",
+                "price" :195000000
+            },
+            { 
+                "Name" : "Peugeot 206",
+                "price" :318000000
+            },
+            { 
+                "Name" : "Peugeot 207",
+                "price" :356000000
+            }
+        ]
+    },
+    "modelsAndReduction":{
+        "data":[
+            {
+                "Year": 1400,
+                "Reduction": 0 
+            },
+            {
+                "Year": 1399,
+                "Reduction": 3 
+            },
+            {
+                "Year": 1398,
+                "Reduction": 5 
+            },
+            {
+                "Year": 1397,
+                "Reduction": 7 
+            },
+            {
+                "Year": 1396,
+                "Reduction": 9 
+            },
+            {
+                "Year": 1395,
+                "Reduction": 11
+            },
+            {
+                "Year": 1394,
+                "Reduction": 13 
+            },
+            {
+                "Year": "Before 1393",
+                "Reduction": 15
+            }
+        ]
+    },
+    "insurance":
+    {
+        "data":[
+            {
+                "checked":"",
+                "name":"insurance",
+                "id":"insuranceStatus1",
+                "value":"Expired",
+                "Affect":-8
+            },
+            {
+                "checked":"checked",
+                "name":"insurance",
+                "id":"insuranceStatus2",
+                "value":"More Than 6 Month",
+                "Affect":2
+            },
+            {
+                "checked":"",
+                "name":"insurance",
+                "id":"insuranceStatus3",
+                "value":"Less Than 6 Month",
+                "Affect":1
+            }
+        ]
+    },
+    "drivenKiloM":{
+        "data":[
+            {
+                "Usage" : "0 - 50 km",
+                "Reduction" : 0
+            },
+            {
+                "Usage" : "50 - 5000 km",
+                "Reduction" : 3
+            },
+            {
+                "Usage" : "5000 - 20000 km",
+                "Reduction" : 4
+            },
+            {
+                "Usage" : "20000 - 100000 km",
+                "Reduction" : 6
+            },
+            {
+                "Usage" : "100000 - 300000 km",
+                "Reduction" : 8
+            },
+            {
+                "Usage" : "More Than 300000 km",
+                "Reduction" : 10
+            }
+        ]
+    },
+    "accident" : {
+        "data" : [
+            {
+                "checked":"checked",
+                "name":"accident",
+                "id":"accidentStatus1",
+                "value":"No accident",
+                "Affect": 0
+            },
+            {
+                "checked":"",
+                "name":"accident",
+                "id":"accidentStatus2",
+                "value":"Simple accident",
+                "Affect": 10
+            },
+            {
+                "checked":"",
+                "name":"accident",
+                "id":"accidentStatus3",
+                "value":"Severe accident",
+                "Affect": 20
+            }
+        ]
+    },
+    "paint" : {
+        "data" : [
+            {
+                "checked":"",
+                "name":"paint",
+                "id":"paintStatus1",
+                "value":"Yes",
+                "Affect": 5
+            },
+            {
+                "checked":"checked",
+                "name":"paint",
+                "id":"paintStatus2",
+                "value":"No",
+                "Affect": 0
+            }
+        ]
+    }
+}
