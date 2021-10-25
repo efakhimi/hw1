@@ -5,7 +5,11 @@ import {
 } from 'react-router-dom';
 import question1 from './question1';
 import question2 from './question2';
+import question6 from './question6';
 import "./style/css/bootstrap.css";
+import "./style/css/all.css"; //fontawesome
+
+
 
 class HomeWork1 extends React.Component{
     render(){
@@ -21,15 +25,15 @@ class HomeWork1 extends React.Component{
                 <div className="collapse navbar-collapse" id="navbarColor03">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" href="/">خانه
+                            <a className="nav-link active" href="/"><i className="fas fa-home"></i>&nbsp;خانه
                                 <span className="visually-hidden">(فعلی)</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/about">طراح</a>
+                            <a className="nav-link" href="/about"><i className="fas fa-palette"></i>&nbsp;طراح</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/contact">تماس</a>
+                            <a className="nav-link" href="/contact"><i className="fas fa-paper-plane"></i>&nbsp;تماس</a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">سوالات</a>
@@ -56,6 +60,7 @@ class HomeWork1 extends React.Component{
             <Route path="/contact" component={Contact} />
             <Route path="/question1" component={question1} />
             <Route path="/question2" component={question2} />
+            <Route path="/question6" component={question6} />
         </div>
             </Router>
         );

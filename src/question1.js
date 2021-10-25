@@ -32,10 +32,11 @@ class question1 extends React.Component
 
         var factor = 100 - productionYear - usage - accident - paint - paint - accident +insurance;
         var price = Math.round(basePrice * factor / 100);
-        var html = "<div class=\"alert  alert-success\">"+
+        var html = "<div class=\"alert  alert-success\" style=\"display:none;\">"+
         "قیمت تقریبی خودرو شما با <strong>شرایط ذکر شده</strong> مبلغ "+ (new Intl.NumberFormat().format(price)) +" تومان میباشد."+
         "</div>";
         $('#result').html(html);
+        $('#result').fadeIn("slow");
         
 
     }
@@ -43,7 +44,7 @@ class question1 extends React.Component
     render(){
         return(
             <div className="card border-warning mb-3" >
-                <div className="card-header">سوال 1</div>
+                <div className="card-header"><i className="fa fa-car"></i>&nbsp;&nbsp;سوال 1</div>
                 <div className="card-body">
                     <h4 className="card-title">محاسبه قیمت خودرو</h4>
                     <div className="card-text">

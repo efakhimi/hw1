@@ -21,7 +21,7 @@ class question2 extends React.Component
     render(){
         return (
             <div className="card bg-primary mb-3" id="targetSection" >
-                <div className="card-header">سوال 2</div>
+                <div className="card-header"><i className="fas fa-palette"></i>&nbsp;&nbsp;سوال 2</div>
                 <div className="card-body">
                     <h4 className="card-title">تغییر پس زمینه</h4>
                     <div className="card-text">
