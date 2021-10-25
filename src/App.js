@@ -6,6 +6,7 @@ import {
 import question1 from './question1';
 import question2 from './question2';
 import question6 from './question6';
+import question7 from './question7';
 import "./style/css/bootstrap.css";
 import "./style/css/all.css"; //fontawesome
 
@@ -61,6 +62,7 @@ class HomeWork1 extends React.Component{
             <Route path="/question1" component={question1} />
             <Route path="/question2" component={question2} />
             <Route path="/question6" component={question6} />
+            <Route path="/question7" component={question7} />
         </div>
             </Router>
         );
