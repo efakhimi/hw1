@@ -6,6 +6,7 @@ import {
 import question1 from './question1';
 import question2 from './question2';
 import question3 from './question3';
+import question4 from './question4';
 import question5 from './question5';
 import question6 from './question6';
 import question7 from './question7';
@@ -65,6 +66,7 @@ class HomeWork1 extends React.Component{
             <Route path="/question1" component={question1} />
             <Route path="/question2" component={question2} />
             <Route path="/question3" component={question3} />
+            <Route path="/question4" component={question4} />
             <Route path="/question5" component={question5} />
             <Route path="/question6" component={question6} />
             <Route path="/question7" component={question7} />
