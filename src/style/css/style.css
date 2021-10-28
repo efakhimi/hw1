@@ -48,3 +48,100 @@ td a{
     display:inline-block;
     vertical-align:middle;
 }
+
+
+.profile-image {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    margin: auto; 
+    margin-right: 20px;
+}
+.profile-image img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 100%; 
+}
+.rounded-circle {
+    border-radius: 50% !important; 
+    margin-right: 0 !important;
+}
+
+.author.module{
+    display:table;
+    margin-bottom:50px
+}
+.author .module--avatar{
+    display:inline-block;
+    height:90px;
+    width:90px
+}
+.author .module--avatar img{
+    border-radius:100%;
+    display:inline-block;
+    height:100%;
+    -o-object-fit:cover;
+    object-fit:cover;
+    vertical-align:middle;
+    width:100%
+}
+.author .module-info{
+    text-rendering:auto;
+    color:#5b5b5b;
+    display:table-cell;
+    font-size:.8rem;
+    padding-right:15px;
+    vertical-align:middle;
+    width:100%
+}
+.author .module-header{
+    margin-bottom:.5rem
+}
+.author .module-footer{
+    font-size:.9em;
+    margin-top:3px
+}
+.author .module-footer a{
+    color:#5b5b5b
+}
+.author .module--name{
+    color:#363636;
+    font-size:1.2em;
+    font-weight:700;
+    margin-left:.5rem
+}
+.author .module--bio{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    color:#858585;
+    font-size:.9em;
+    margin:3px 0 0
+}
+.btn.btn-rounded{
+    border-radius: 50px; 
+}
+.badge a{
+    color:black;
+}
+.larger-text{
+    font-size: 1.25rem;
+}
+.smaller-text{
+    font-size: 0.75rem;
+}
+#like:hover {
+    color:palevioletred;
+}
+input:focus{
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+} 
+textarea,input{
+    outline: none !important;
+    border:1px solid black;
+    box-shadow: 0 0 10px #719ECE;
+} 
+.blockquote{
+    white-space: pre-line;
+}
