@@ -22,7 +22,7 @@ class HomeWork1 extends React.Component{
             <Router>
         <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">Navbar</a>
+                <a className="navbar-brand" href="/hw1/">Navbar</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -30,28 +30,28 @@ class HomeWork1 extends React.Component{
                 <div className="collapse navbar-collapse" id="navbarColor03">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" href="/"><i className="fas fa-home"></i>&nbsp;خانه
+                            <a className="nav-link active" href="/hw1/"><i className="fas fa-home"></i>&nbsp;خانه
                                 <span className="visually-hidden">(فعلی)</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/about"><i className="fas fa-palette"></i>&nbsp;طراح</a>
+                            <a className="nav-link" href="/hw1/about"><i className="fas fa-palette"></i>&nbsp;طراح</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/contact"><i className="fas fa-paper-plane"></i>&nbsp;تماس</a>
+                            <a className="nav-link" href="/hw1/contact"><i className="fas fa-paper-plane"></i>&nbsp;تماس</a>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">سوالات</a>
+                            <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/hw1/" role="button" aria-haspopup="true" aria-expanded="false">سوالات</a>
                             <div className="dropdown-menu">
-                                <a className="dropdown-item" href="/question1">سوال 1</a>
-                                <a className="dropdown-item" href="/question2">سوال 2</a>
+                                <a className="dropdown-item" href="/hw1/question1">سوال 1</a>
+                                <a className="dropdown-item" href="/hw1/question2">سوال 2</a>
                                 <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="/question3">سوال 3</a>
-                                <a className="dropdown-item" href="/question4">سوال 4</a>
-                                <a className="dropdown-item" href="/question5">سوال 5</a>
+                                <a className="dropdown-item" href="/hw1/question3">سوال 3</a>
+                                <a className="dropdown-item" href="/hw1/question4">سوال 4</a>
+                                <a className="dropdown-item" href="/hw1/question5">سوال 5</a>
                                 <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="/question6">سوال 6</a>
-                                <a className="dropdown-item" href="/question7">سوال 7</a>
+                                <a className="dropdown-item" href="/hw1/question6">سوال 6</a>
+                                <a className="dropdown-item" href="/hw1/question7">سوال 7</a>
                             </div>
                         </li>
                     </ul>
