@@ -14,13 +14,32 @@ class question4 extends React.Component{
             date : "06 آبان 1400",
             comments : [],
             likes : 26,
+            bookmarked : this.getCookie("bookmarked"),
             youLiked : false,
             youFollow : false
         }
 
         this.whatsAppLinkGenerator = this.whatsAppLinkGenerator();
         this.telegramLinkGenerator = this.telegramLinkGenerator();
-        //this.followClickHandler = this.followClickHandler();
+    }
+    setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+    getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)===' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
     }
     sendCommentHandler()
     {
@@ -36,6 +55,13 @@ class question4 extends React.Component{
     {
         this.setState({
             youFollow: !this.state.youFollow
+        });
+    }
+    bookmarkThePost()
+    {
+        this.setCookie("bookmarked",!this.state.bookmarked, 7);
+        this.setState({
+            bookmarked: !this.state.bookmarked
         });
     }
     likeThePost()
@@ -125,7 +151,7 @@ class question4 extends React.Component{
                     <div className="card-body text-black">
                         <div className="row">
                             <div className="col-md-12">
-                                برچسب ها :&nbsp;
+                                <i className="fas fa-tags"></i>&nbsp;برچسب ها :&nbsp;
                                 <span className="badge rounded-pill bg-secondary"><a href={window.location.href + "/tags/تست 1"}>تست 1</a></span>&nbsp;
                                 <span className="badge rounded-pill bg-success"><a href={window.location.href + "/tags/تست 2"}>تست 2</a></span>&nbsp;
                                 <span className="badge rounded-pill bg-info"><a href={window.location.href + "/tags/تست برچسب آزمایشی"}>برچسب آزمایشی</a></span>&nbsp;
@@ -135,6 +161,7 @@ class question4 extends React.Component{
                             <div className="col-md-6">
                                 <span className="larger-text">
                                     <span ><i className="far fa-calendar"></i>&nbsp;نوشته شده در {this.state.date}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span ><i id="like" className={this.state.bookmarked ? "fas fa-bookmark" : "far fa-bookmark"} onClick={()=>{this.bookmarkThePost()}}></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
                                     <span ><i id="like" className={this.state.youLiked ? "fas fa-thumbs-up" : "far fa-thumbs-up"} onClick={()=>{this.likeThePost()}}></i> {this.state.likes}</span>&nbsp;&nbsp;&nbsp;&nbsp;
                                     <span ><i className="far fa-comment"></i> {this.state.comments.length}</span>
                                 </span>
