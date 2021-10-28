@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/hw1/static/css/main.ed6768e8.chunk.css",
+    "main.js": "/hw1/static/js/main.067a6b7f.chunk.js",
+    "main.js.map": "/hw1/static/js/main.067a6b7f.chunk.js.map",
+    "runtime-main.js": "/hw1/static/js/runtime-main.985c3877.js",
+    "runtime-main.js.map": "/hw1/static/js/runtime-main.985c3877.js.map",
+    "static/js/2.331e60ed.chunk.js": "/hw1/static/js/2.331e60ed.chunk.js",
+    "static/js/2.331e60ed.chunk.js.map": "/hw1/static/js/2.331e60ed.chunk.js.map",
+    "static/js/3.3e899fd9.chunk.js": "/hw1/static/js/3.3e899fd9.chunk.js",
+    "static/js/3.3e899fd9.chunk.js.map": "/hw1/static/js/3.3e899fd9.chunk.js.map",
+    "index.html": "/hw1/index.html",
+    "static/css/main.ed6768e8.chunk.css.map": "/hw1/static/css/main.ed6768e8.chunk.css.map",
+    "static/js/2.331e60ed.chunk.js.LICENSE.txt": "/hw1/static/js/2.331e60ed.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/hw1/static/media/Vazir.fc6aad88.eot",
+    "static/media/click1.07cda4b8.wav": "/hw1/static/media/click1.07cda4b8.wav",
+    "static/media/all.css": "/hw1/static/media/fa-solid-900.eeccf4f6.woff",
+    "static/media/face1.e7508ed1.jpg": "/hw1/static/media/face1.e7508ed1.jpg",
+    "static/media/pic1.edb4ab74.jpg": "/hw1/static/media/pic1.edb4ab74.jpg",
+    "static/media/sound.94ea76a9.mp3": "/hw1/static/media/sound.94ea76a9.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.985c3877.js",
+    "static/js/2.331e60ed.chunk.js",
+    "static/css/main.ed6768e8.chunk.css",
+    "static/js/main.067a6b7f.chunk.js"
+  ]
+}
