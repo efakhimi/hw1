@@ -60,16 +60,16 @@ class HomeWork1 extends React.Component{
         </nav>
         
         <div className="container">
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/question1" component={question1} />
-            <Route path="/question2" component={question2} />
-            <Route path="/question3" component={question3} />
-            <Route path="/question4" component={question4} />
-            <Route path="/question5" component={question5} />
-            <Route path="/question6" component={question6} />
-            <Route path="/question7" component={question7} />
+            <Route exact path="/hw1/" component={Home} />
+            <Route path="/hw1/about" component={About} />
+            <Route path="/hw1/contact" component={Contact} />
+            <Route path="/hw1/question1" component={question1} />
+            <Route path="/hw1/question2" component={question2} />
+            <Route path="/hw1/question3" component={question3} />
+            <Route path="/hw1/question4" component={question4} />
+            <Route path="/hw1/question5" component={question5} />
+            <Route path="/hw1/question6" component={question6} />
+            <Route path="/hw1/question7" component={question7} />
         </div>
             </Router>
         );
