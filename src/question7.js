@@ -125,7 +125,7 @@ class question7 extends React.Component
                                     <div className="form-group row">
                                         <label htmlFor="carName" className="col-sm-4 col-form-label">مقدار موجودی :</label>
                                         <div className="col-sm-8">
-                                            <input className="form-control " type="number" min="1" step="0.01"  id="money" value="1" onInput={this.changesHandler}/>
+                                            <input className="form-control " type="number" min="1" step="0.01"  id="money" value={this.state.money} onInput={this.changesHandler}/>
                                         </div>
                                     </div>
                                 </div>  

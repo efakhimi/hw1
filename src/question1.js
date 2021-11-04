@@ -32,11 +32,10 @@ class question1 extends React.Component
 
         var factor = 100 - productionYear - usage - accident - paint - paint - accident +insurance;
         var price = Math.round(basePrice * factor / 100);
-        var html = "<div class=\"alert  alert-success\" style=\"display:none;\">"+
+        var html = "<div class=\"alert  alert-success\">"+
         "قیمت تقریبی خودرو شما با <strong>شرایط ذکر شده</strong> مبلغ "+ (new Intl.NumberFormat().format(price)) +" تومان میباشد."+
         "</div>";
-        $('#result').html(html);
-        $('#result').fadeIn("slow");
+        $('#result').html(html).hide().fadeIn(1000);
         
 
     }
